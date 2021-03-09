@@ -1,0 +1,426 @@
+<!DOCTYPE html><!---->
+
+<html lang="es"><!---->
+	<head><!---->
+		<title>TEAM ULTIMA HORA</title><!---->
+		<meta charset="utf-8"><!--mas info-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	</head>
+
+	<body><!---->
+		<div id="agrupar">
+			<!--PARTE 1 TITULO DE LA PAGUINA--> 
+			
+			<div id="cabecera">
+				<div id="logo">
+					<img src="#" class="logo" alt="">
+				</div>
+				<div id="buscador">
+					<div class="busqueda">
+						<form>
+							<input type="text" name="" placeholder="Que estas buscando...!!!">
+							<input type="submit" name="" value="Busque">
+						</form>
+					</div>
+					<div class="botonmenu" >
+						<ul class="botones">
+							<li><a href="#"><button type="button" title="Registro" ><img src="img/registro.jpg" class="icon1" alt=""></button></a></li>
+							<li><a href="#"><button type="button" title="Mensaje"><img src="img/mensaje.jpg" class="icon1" alt=""></button></a></li>
+							<li><a href="#"><button type="button" title="Pedidos"><img src="img/pedidos.jpg" class="icon1" alt=""></button></a></li>
+							<li><a href="#"><button type="button" title="Carro" ><img src="img/carro.jpg" class="icon1" alt=""></button></a></li>
+						</ul>
+						
+					</div>
+
+					
+				</div>
+			</div>
+			
+			<!--EPARTE 2 NAVEGACION -->
+			<div id="menu">
+				<nav class="navegacion">
+					<ul class="menu"><!--lista desordenada-->
+						<li><a href="#">Categorias v</a>
+							<ul class="submenu">
+								<li><a href="#">categoria1</a></li>
+								<li><a href="#">categoria2</a></li>
+								<li><a href="#">categoria3</a></li>
+							</ul>
+						</li>
+						<li>|</li>
+						<li><a href="#">Listo para enviar</a></li>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">EQUIPO </a></li>
+						<li><a href="#">Servicios v</a>
+							<ul class="submenu">
+								<li><a href="#">Servicios1</a></li>
+								<li><a href="#">Servicios2</a></li>
+								<li><a href="#">Servicios3</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Vender en AQUI v</a>
+							<ul class="submenu">
+								<li><a href="#">venta1</a></li>
+								<li><a href="#">venta2</a></li>
+								<li><a href="#">venta3</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Ayuda v</a>
+							<ul class="submenu">
+								<li><a href="#">ayuda1</a></li>
+								<li><a href="#">ayuda2</a></li>
+								<li><a href="#">ayuda3</a></li>
+							</ul>
+						</li>
+						<li>------></li>
+						<li><a href="#">Obtener la aplicacion</a></li>
+						<li><a href="registros.html">Registrarse</a></li>
+					</ul>
+				</nav>
+			</div>
+			
+			<!-- PARTE 3 CONTENIDO PRINCIPAL-->
+			<div id="arriba"></div>
+			<div id="seccion">
+				<div class="lista">
+					<div class="accesorio" >
+						<h6 class="aces" >EMBUTIDOS</h6>
+					</div>
+					<div class="l-accesorio" >
+						<ul class="aceso">
+							<li><a href="#">-> LA BUIFARRA</a></li>
+							<li><a href="#">-> JAMONES</a></li>
+							<li><a href="#">-> SALCHICHAS</a></li>
+							<li><a href="#">-> CURADOS</a></li>
+							<li><a href="#">-> COCIDOS</a></li>
+							<li><a href="#">-> FRESCOS</a></li>
+							<li><a href="#">-> EMBUTIDOS DE SANGRE</a></li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="sliderr">
+					<!-- Swiper -->
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+						<div class="swiper-slide "><img src="img/embu1.jpg" class="img2" alt=""></div>
+						<div class="swiper-slide "><img src="img/embut2.jpg" class="img2"alt=""></div>
+						<div class="swiper-slide "><img src="img/embut3.jpg" class="img2"alt=""></div>
+						<div class="swiper-slide "><img src="img/embut4.jpg" class="img2"alt=""></div>
+						<div class="swiper-slide "><img src="img/embut2.jpg" class="img2"alt=""></div>
+						<div class="swiper-slide "><img src="img/embu1.jpg" class="img2"alt=""></div>
+						<div class="swiper-slide "><img src="img/embut3.jpg" class="img2"alt=""></div>
+						<div class="swiper-slide "><img src="img/embut4.jpg" class="img2"alt=""></div>
+						<div class="swiper-slide "><img src="img/embut2.jpg" class="img2"alt=""></div>
+						<div class="swiper-slide "><img src="img/embu1.jpg" class="img2"alt=""></div>
+						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+
+					<!-- Swiper JS -->
+					<script src="js/swiper.min.js"></script>
+
+					<!-- Initialize Swiper -->
+					<script>
+						var swiper = new Swiper('.swiper-container', {
+						spaceBetween: 30,
+						centeredSlides: true,
+						autoplay: {
+							delay: 2500,
+							disableOnInteraction: false,
+						},
+						pagination: {
+							el: '.swiper-pagination',
+							clickable: true,
+						},
+						navigation: {
+							nextEl: '.swiper-button-next',
+							prevEl: '.swiper-button-prev',
+						},
+						});
+					</script>
+				</div>
+			</div>	
+
+			<div id="seccion1">
+				<h6 class="th1">Lo que mas sale:</h6>
+			</div>
+
+			<div id="seccion2">
+				<div class="seccion-all">
+					<div class="seccion-carrusel">
+						<figure><img class="lap1" src="img/ambut1.jpg" ></figure>
+						<figure><img class="lap1" src="img/emvutidoi.jpg" ></figure>
+						<figure><img class="lap1" src="img/embut5.jpg" ></figure>
+						<figure><img class="lap1" src="img/carne.jpg" ></figure>
+						<figure><img class="lap1" src="img/embu1.jpg" ></figure>
+						<figure><img class="lap1" src="img/emvutidoi.jpg" ></figure>
+						<figure><img class="lap1" src="img/embut5.jpg" ></figure>
+						<figure><img class="lap1" src="img/carne.jpg" ></figure>
+						<figure><img class="lap1" src="img/embu1.jpg" ></figure>
+						<figure><img class="lap1" src="img/embut3.jpg" ></figure>
+
+					</div>
+				</div>
+			</div>
+			<div id="seccion3">
+				<h6 class="th1">Para ti:</h6>
+			</div>
+			<!--<div id="espacio"></div>-->
+			<div id="galeria">
+				<div class="cont-galeria">
+						<div class="item">
+							<a href="productos.html"><img src="img/embu1.jpg" class="item-img" alt=""></a>
+							<div class="item-text">
+								<h3>Embutido 1</h3>
+								<p>Embutidos Ecochichi la mejor calidad de todo Puno</p>
+								<a class="a" href="productos.html">ver</a>
+							</div>
+						</div>
+			
+					<div class="item">
+						<a href="productos.html"><img src="img/embu1.jpg" class="item-img" alt=""></a>
+							<div class="item-text">
+								<h3>Embutido 1</h3>
+								<p>Embutidos Ecochichi la mejor calidad de todo Puno</p>
+								<a class="a" href="productos.html">ver</a>
+							</div>
+					</div>
+					<div class="item">
+						<a href="productos.html"><img src="img/embu1.jpg" class="item-img" alt=""></a>
+							<div class="item-text">
+								<h3>Embutido 1</h3>
+								<p>Embutidos Ecochichi la mejor calidad de todo Puno</p>
+								<a class="a" href="productos.html">ver</a>
+							</div>
+					</div>
+					<div class="item">
+						<a href="productos.html"><img src="img/embu1.jpg" class="item-img" alt=""></a>
+							<div class="item-text">
+								<h3>Embutido 1</h3>
+								<p>Embutidos Ecochichi la mejor calidad de todo Puno</p>
+								<a class="a" href="productos.html">ver</a>
+							</div>
+					</div>
+					<div class="item">
+						<a href="productos.html"><img src="img/embu1.jpg" class="item-img" alt=""></a>
+							<div class="item-text">
+								<h3>Embutido 1</h3>
+								<p>Embutidos Ecochichi la mejor calidad de todo Puno</p>
+								<a class="a" href="productos.html">ver</a>
+							</div>
+					</div>
+					<div class="item">
+						<a href="productos.html"><img src="img/embu1.jpg" class="item-img" alt=""></a>
+							<div class="item-text">
+								<h3>Embutido 1</h3>
+								<p>Embutidos Ecochichi la mejor calidad de todo Puno</p>
+								<a class="a" href="productos.html">ver</a>
+							</div>
+					</div>
+					<div class="item">
+						<a href="productos.html"><img src="img/carne.jpg" class="item-img" alt=""></a>
+							<div class="item-text">
+								<h3>Embutido 1</h3>
+								<p>Embutidos Ecochichi la mejor calidad de todo Puno</p>
+								<a class="a" href="productos.html">ver</a>
+							</div>
+					</div>
+					<div class="item">
+						<a href="productos.html"><img src="img/carne.jpg" class="item-img" alt=""></a>
+							<div class="item-text">
+								<h3>Embutido 1</h3>
+								<p>Embutidos Ecochichi la mejor calidad de todo Puno</p>
+								<a class="a" href="productos.html">ver</a>
+							</div>
+					</div>
+					<div class="item">
+						<a href="productos.html"><img src="img/carne.jpg" class="item-img" alt=""></a>
+							<div class="item-text">
+								<h3>Embutido 1</h3>
+								<p>Embutidos Ecochichi la mejor calidad de todo Puno</p>
+								<a class="a" href="productos.html">ver</a>
+							</div>
+					</div>
+					<div class="item">
+						<a href="productos.html"><img src="img/carne.jpg" class="item-img" alt=""></a>
+							<div class="item-text">
+								<h3>Embutido 1</h3>
+								<p>Embutidos Ecochichi la mejor calidad de todo Puno</p>
+								<a class="a" href="productos.html">ver</a>
+							</div>
+					</div>
+					<div class="item">
+						<a href="productos.html"><img src="img/carne.jpg" class="item-img" alt=""></a>
+							<div class="item-text">
+								<h3>Embutido 1</h3>
+								<p>Embutidos Ecochichi la mejor calidad de todo Puno</p>
+								<a class="a" href="productos.html">ver</a>
+							</div>
+					</div>
+					<div class="item">
+						<a href="productos.html"><img src="img/carne.jpg" class="item-img" alt=""></a>
+							<div class="item-text">
+								<h3>Embutido 1</h3>
+								<p>Embutidos Ecochichi la mejor calidad de todo Puno</p>
+								<a class="a" href="productos.html">ver</a>
+							</div>
+					</div>
+					<div class="item">
+						<a href="productos.html"><img src="img/emvutidoi.jpg" class="item-img" alt=""></a>
+							<div class="item-text">
+								<h3>Embutido 1</h3>
+								<p>Embutidos Ecochichi la mejor calidad de todo Puno</p>
+								<a class="a" href="productos.html">ver</a>
+							</div>
+					</div>
+					<div class="item">
+						<a href="productos.html"><img src="img/emvutidoi.jpg" class="item-img" alt=""></a>
+							<div class="item-text">
+								<h3>Embutido 1</h3>
+								<p>Embutidos Ecochichi la mejor calidad de todo Puno</p>
+								<a class="a" href="productos.html">ver</a>
+							</div>
+					</div>
+					<div class="item">
+						<a href="productos.html"><img src="img/emvutidoi.jpg" class="item-img" alt=""></a>
+							<div class="item-text">
+								<h3>Embutido 1</h3>
+								<p>Embutidos Ecochichi la mejor calidad de todo Puno</p>
+								<a class="a" href="productos.html">ver</a>
+							</div>
+					</div>
+					<div class="item">
+						<a href="productos.html"><img src="img/emvutidoi.jpg" class="item-img" alt=""></a>
+							<div class="item-text">
+								<h3>Embutido 1</h3>
+								<p>Embutidos Ecochichi la mejor calidad de todo Puno</p>
+								<a class="a" href="productos.html">ver</a>
+							</div>
+					</div>
+					<div class="item">
+						<a href="productos.html"><img src="img/emvutidoi.jpg" class="item-img" alt=""></a>
+							<div class="item-text">
+								<h3>Embutido 1</h3>
+								<p>Embutidos Ecochichi la mejor calidad de todo Puno</p>
+								<a class="a" href="productos.html">ver</a>
+							</div>
+					</div>
+					<div class="item">
+						<a href="productos.html"><img src="img/emvutidoi.jpg" class="item-img" alt=""></a>
+						<div class="item-text">
+							<h3>Embutido 1</h3>
+								<p>Embutidos Ecochichi la mejor calidad de todo Puno</p>
+							<a class="a" href="productos.html">ver</a>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div id="proveedores">
+				<h6 class="th1">Ubicanos en:</h6>
+			</div>
+
+			<div id="ubiquenos">
+				<div class="edificio">
+					<img src="img/tienda.jpg" class="img-edi">
+				</div>
+				<div class="ubicacion">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9672.671045836243!2d-70.0219257783209!3d-15.
+					824879410663144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915d69babb63e6cf%3A0xf24057bf79de0852!2sUnive
+					rsidad%20Nacional%20Del%20Altiplano!5e0!3m2!1
+					ses!2spe!4v1602439678048!5m2!1ses!2spe" 
+					width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</div>
+				
+			</div>
+			<div id="pie">
+				<div class="acercade">
+						<ul class="general">
+							<li>
+								<ul class="general1">
+									<li><a href="#" class="titulo">Servicio al cliente</a></li>
+									<li><a href="#" class="subti" >Centro de ayuda</a></li>
+									<li><a href="#" class="subti" >Contactenos</a></li>
+									<li><a href="#" class="subti" >Reportar abuso</a></li>
+									<li><a href="#" class="subti" >Politicas y reglas info</a></li>
+									<li><a href="#" class="subti" >Reciba pagos por sus comentario</a></li>
+								</ul>
+							</li>
+							<li>
+								<ul class="general1">
+									<li><a href="#" class="titulo">Sobre Nosotros</a></li>
+									<li><a href="#" class="subti" >Sobre Ecochichi</a></li>
+									<li><a href="#" class="subti" >Acerca Ecochichi</a></li>
+									<li><a href="#" class="subti" >.</a></li>
+									<li><a href="#" class="subti" >.</a></li>
+									<li><a href="#" class="subti" >.</a></li>
+								</ul>
+							</li>
+							<li>
+								<ul class="general1">
+									<li><a href="#" class="titulo">Compre en Ecochichi.com</a></li>
+									<li><a href="#" class="subti" >Todas las categorias</a></li>
+									<li><a href="#" class="subti" >slicitud</a></li>
+									<li><a href="#" class="subti" >listo para enviar</a></li>
+									<li><a href="#" class="subti" >.</a></li>
+									<li><a href="#" class="subti" >.</a></li>
+								</ul>
+							</li>
+							<li>
+								<ul class="general1">
+									<li><a href="#" class="titulo">Vender en aqui.com</a></li>
+									<li><a href="#" class="subti" >Membresias de proveedores</a></li>
+									<li><a href="#" class="subti" >Centro de aprendizaje</a></li>
+									<li><a href="#" class="subti" >Programa de Socios</a></li>
+									<li><a href="#" class="subti" >.</a></li>
+									<li><a href="#" class="subti" >.</a></li>
+								</ul>
+							</li>
+							<li>
+								<ul class="general1">
+									<li><a href="#" class="titulo">Servicios comerciales</a></li>
+									<li><a href="#" class="subti" >Garantias Comerciales</a></li>
+									<li><a href="#" class="subti" >Identidad comercia</a></li>
+									<li><a href="#" class="subti" >.</a></li>
+									<li><a href="#" class="subti" >.</a></li>
+									<li><a href="#" class="subti" >.</a></li>									
+								</ul>
+							</li>
+						</ul>
+
+				</div>
+				
+			</div>
+			<div class="fin">
+					<div class="descarge">
+						<div class="img-d">
+							<img src="#" class="desimg" alt="">
+						</div>
+						
+						<h4 class="t4">Buscanos en:</h4>
+					</div>
+					<div class="iconpie">
+						<ul class="botoness">
+							<li><a href="#"><button type="button" title="Facebook" ><img src="img/facebook.png" class="icon11" alt=""></button></a></li>
+							<li><a href="#"><button type="button" title="Instagram"><img src="img/instagram.png" class="icon11" alt=""></button></a></li>
+							<li><a href="#"><button type="button" title="WhatsApp"><img src="img/whatsApp.png" class="icon11" alt=""></button></a></li>
+							<li><a href="#"><button type="button" title="Twitter" ><img src="img/twitter.png" class="icon11" alt=""></button></a></li>
+						</ul>
+
+					</div>
+			</div>
+		</div>
+
+	</body>
+</html>

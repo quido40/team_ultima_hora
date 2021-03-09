@@ -1,0 +1,616 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color:  white;
+    font-family: sans-serif;
+    padding-left: 7px;
+
+}
+
+
+
+.container{
+    background-color: white;
+    width: 100%;
+    padding: 1%;
+    margin: 0px;
+    /*border: 1px solid black;*/
+
+}
+.grid{
+    margin: 0px 20px;
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    box-shadow: 0px 0px 20px 0px rgb(115, 56, 133);
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.cabeza{
+    margin: 5px;
+    margin-left: 50px;
+}
+.cabeza h6{
+    display: inline-block;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 1px 5px;
+}
+.agrupar{
+    width: 1335px;
+    /*border: 1px solid black;*/
+    margin: 20px auto;
+    
+    
+}
+
+
+/*PARTE 1 TITULO DE LA PAGUINA*/
+#cabecera{
+    background: #ffffff;
+    /*border: 1px solid #999999;*/
+    padding: 10px;
+    width: 1315px; height: 60px;
+    border-bottom: 2px solid rgb(161, 45, 161);
+    
+}
+
+
+#logo{
+    border: 1px solid black;
+    width: 400px; height: 60px;
+    float: left;
+    
+}
+.logo{
+    width: 400px; height: 60px;
+}
+
+#buscador{
+    /*border: 1px solid black;*/
+    width: 898px; height: 60px;
+    padding-right: 0px;
+    float: right;
+}
+
+.busqueda{
+    /*position: absolute;*/
+    /*border: 1px solid black;*/
+    padding-top: 15px;
+    width: 600px; height: 45px;
+    float: left;
+    /*transform: translate();*/
+}
+
+input{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    
+}
+input[type="text"]{
+    background: #fff;
+    width: 480px;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 25px 0 0 25px;
+    
+}
+input[type="text"]:hover{
+    border: 3px solid rgb(71, 67, 67);
+    transition: all .3s;
+}
+
+input[type="submit"]{
+    position: relative;
+    left: -5px;
+    border-radius: 0 25px 25px 0;
+    width: 100px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background: rgb(173, 81, 173);
+    color: white;
+}
+input[type="submit"]:hover{
+    color: rgb(153, 72, 153);
+    background: white;
+    border: 3px solid rgb(153, 72, 153);
+    transition: all .3s;
+}
+
+.botonmenu{
+    /*border: 1px solid red;**/
+    width: 293px; height: 60px;
+    float: right;
+}
+
+.botones{
+    list-style: none;
+}
+.botones > li{
+    position: relative;
+    display: inline-block;
+
+}
+.botones > li > a{
+    display: block;
+    padding: 5px 5px;
+}
+.botones li a button{
+    border-style: none;
+}
+.botones li a button:hover{
+    border-bottom: 3px solid rgb(153, 72, 153);
+    
+}
+.icon1{
+    height: 40px;
+    width: 50px;
+    box-shadow: 0px 0px 5px 0px violet;
+}
+.icon1:hover{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+/*PARTE 2 NAVEGACION*/
+#menu{
+    width: 1335px; height: 60px;
+    background: white;
+}
+.navegacion{
+    width: 1335px;
+    margin: 0px  auto;
+    background:rgb(255, 255, 255);
+}
+.navegacion ul{
+    list-style: none;
+}
+
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+.menu > li > a{
+    display: block;
+    padding: 21px 10px;
+    color: rgb(71, 66, 71);
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.menu li a:hover{
+    color: rgb(170, 22, 170);
+    transition: all .3s;
+}
+/*sub menu*/
+.submenu{
+    position: absolute;
+    background: white;
+    width: 120%;
+    visibility: hidden;
+}
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: rgb(71, 66, 71);
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.submenu li a:hover{
+    color: rgb(170, 22, 170);
+}
+.menu li:hover .submenu{
+    visibility: visible;
+    transition: all 1.5;
+}
+
+
+.producto{
+    width: 1335px; height: 1300px;
+    border: 1px solid white;
+    background:rgb(210, 210, 216);
+    border-top: 5px solid rgb(59, 55, 55);
+    border-bottom: 5px solid rgb(59, 55, 55);
+}
+
+/**************IMAGENES********************/
+ul.slider{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+ul.slider li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: white;
+    transition: opacity 0.5s;
+}
+
+.producto-imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+ul.slider li:first-child{
+    opacity: 1;
+}
+
+ul.slider li:target{
+    opacity: 1;
+}
+/***************MENU REDODNITOS*******************/
+.menu-rot{
+    text-align: center;
+    margin: 20px;
+}
+
+.menu-rot li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu-rot li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100px;
+}
+/*********************INFORMACIÓN COSTOS*********************/
+.tarjeta{
+    width: 50px;
+    height: 30px;
+    margin: 2px 15px;
+    padding: 5px 6px;
+    border: 1px solid black;
+    border-radius: 10%;
+}
+#precio, #consultas{
+    padding: 30px 20px;
+}
+#precio h2{
+    color: red; 
+    font-size: 24px;
+}
+#precio .parte1{
+    color: rgb(140, 142, 143);
+    font-size: 15px;
+    text-align: right;
+    padding: 3px 20px;
+}
+#precio .parte2{
+    padding: 3px 15px;
+    font-weight: bold;
+    color: gray;
+}
+#precio .parte2 button{
+    padding: 5px 8px;
+    text-align: center;
+    color: white;
+    border: 0px solid white;
+    background: rgba(18, 153, 243, 0.979);
+    width: 100%;
+    margin: 3px 0px;
+}
+#precio .parte2 a{
+    font-size: 12px;
+    padding: 0px 20px;
+}
+#precio .parte2 button:hover{
+    box-shadow: 0 0px 15px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+}
+
+#precio h3{
+    font-weight: bold;
+}
+
+/**************CONSULTAS SECCION VENDEDOR**************/
+#consultas{
+    padding-right: 0px;
+}
+#consultas #titulo{
+    /*De acuerdo a la página*/
+    color: rgb(90, 90, 90);
+}
+#consultas .valor i{
+    display: inline-block;
+    color: rgb(140, 140, 255);
+}
+#consultas .parte1{
+    color: rgb(140, 142, 143);
+    font-size: 15px;
+    text-align: right;
+    padding: 3px 5px;
+}
+#consultas .parte2{
+    padding: 3px 10px;
+    font-weight: bold;
+    color: gray;
+}
+#consultas .ubicacion i{
+    margin: 0px 10px;
+}
+#consultas .ubicacion .info-ubi h6{
+    font-size: 15px;
+    line-height: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#consultas .ubicacion .info-ubi h6 small{
+    color: gray;
+}
+#consultas .seccion1 h4{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+#consultas .seccion2 h6{
+    font-weight: bold;
+    font-size: 15px;
+    color: gray;
+    text-align: center;
+}
+#tabla2 td{
+    padding: 3px 5px;
+    width: 70px;
+}
+.info-boton{
+    width: 100%;
+    margin: 3px 0px;
+    padding: 5px 8px;
+    color: white;
+    background: rgb(65, 235, 178);
+    border: 0px solid white;
+}
+.info-boton:hover{
+    box-shadow: 0 0px 15px rgb(143, 230, 169);
+    transition: all 0.2s ease;
+}
+#alerta{
+    margin-top: 1 0px;
+    display: none;
+}
+/***************CARACTERISTICAS*************/
+.grid2{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    box-shadow: 0px 0px 20px 0px rgb(115, 56, 133);
+
+}
+
+.menu-info li{
+    display: inline-block;
+    width: 300px;
+    padding: 15px 30px;
+    font-weight: bold;
+}
+.menu-info li:hover{
+    box-shadow: 0 0px 15px rgb(143, 230, 169);
+    transition: all 0.2s ease;
+}
+.menu-info li a{
+    text-decoration: none;
+    color: gray;
+}
+ul.detalles-producto{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    box-shadow: 0px 0px 20px 0px rgb(115, 56, 133);
+
+}
+ul.detalles-producto li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity 0.5s;
+    background: white;
+}
+
+ul.detalles-producto li:first-child{
+    opacity: 1;
+}
+ul.detalles-producto li:target{
+    opacity: 1;
+}
+#info-producto h4{
+    font-weight: bold;
+}
+#info-producto .detalles{
+    padding: 5px 50px;
+}
+.detalles-producto #general, #caract, #envio{
+    padding: 20px 40px;
+}
+.detalles-producto td{
+    padding: 10px 0px;
+}
+.detalles-producto .clase1{
+    text-align: left;
+    padding: 0px 20px;
+    color: gray;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.detalles-producto .clase2{
+    text-align: left;
+    padding: 0px 20px;
+    color: rgb(65, 65, 65);
+    font-size: 18px;
+}
+.detalles-producto .texto-info{
+    margin: 0px;
+    padding: 5px 20px;
+    color: rgb(82, 82, 77);
+    font-size: 15px;
+}
+#envio h6, label, .paises {
+    color: gray;
+    font-size: 15px;
+    font-weight: 8px;
+}
+#envio .tablaa td {
+    margin: 0;
+    padding: 5px 30px;
+    font-size: 12px;
+    width: 15% 15% 15% 55%;
+}
+#envio .tablaa{
+    width: 100%;
+    border: 1px solid black;
+    margin: 5px 20px;
+}
+#envio .tablaa .parte-a{
+    background: rgb(209, 206, 206);
+    border: 1px solid rgb(202, 200, 200);
+}
+#envio .tablaa .parte-b{
+    background: white;
+    border: 1px solid white;
+}
+
+/*PIE*/
+#pie{
+    background: rgb(11, 5, 46);
+    width: 1335px; height: 300px;
+}
+
+.acercade{
+    width: 1333px; height: 400px;
+    border-bottom: 5px solid rgb(59, 55, 55);
+    margin: 0;
+    padding: 0;
+    /*color: black;*/
+    position: absolute;
+}
+
+.general{
+    list-style: none;
+    padding-left: 0px;
+    padding: 20px;
+    /*border: 1px solid red;*/
+}
+.general > li{
+    position: relative;
+    display: inline-block;
+    padding: 1px;
+
+}
+.general1{
+    list-style: none;
+}
+.general1 > li{
+    position: relative;
+    display: block;
+    padding: 10px;
+}
+.general1 > li >a{
+    color: rgb(255, 249, 249);
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.titulo{
+    font-size: 25px;
+}
+.subti{
+    font-size: 12px;
+}
+.fin{
+    width: 1335px; height: 70px;
+    border-top: 5px solid rgb(59, 55, 55);
+    background: white;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.descarge{
+    width: 935px; height: 70px;
+    /*border: 1px solid red;*/
+    float: left;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+.img-d{
+    width: 400px; height: 70px;
+    /*border: 1px solid red;*/
+    float: left;
+    padding-top: 5px;
+}
+
+.t4{
+    padding-top: 25px;
+    font-family: sans-serif;
+    color: rgb(170, 22, 170);
+    font-size: 30px;  
+}
+
+.desimg{
+    width: 300px; height: 50px;
+    border: 1px solid black;
+    
+}
+
+.iconpie{
+    width: 400px; height: 70px;
+    /*border: 1px solid red;*/
+    background: white;
+    float: right;
+
+}
+
+
+.botoness{
+    list-style: none;
+
+}
+.botoness > li{
+    position: relative;
+    display: inline-block;
+    padding-top: 10px;
+    padding: 10px;
+
+}
+.botoness > li > a{
+    display: block;
+    padding: 5px 5px;
+}
+.botoness li a button{
+    border-style: none;
+}
+.botoness li a button:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: all 0.3s;    
+}
+.icon11{
+    height: 40px;
+    width: 50px;
+}
